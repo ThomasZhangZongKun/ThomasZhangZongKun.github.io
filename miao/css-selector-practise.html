@@ -5,9 +5,7 @@
   <meta charset="utf-8">
   <title>Document</title>
   <style>
-    p span {
-      color: red;
-    }
+    
 
     p>span :nth-child(1) {
       color: green;
@@ -37,13 +35,13 @@
     }
     /* 下面三个优先级相同,要注意顺序 */
     /* hover:表示鼠标悬停  focus表示鼠标点击后悬停  active表示鼠标点击的那一下 */
-    p.a:hover{
+    [tabindex="-1"]:hover{
       color: red;
     }
-    p.a:focus{
+    [tabindex="-1"]:focus{
       color:blue;
     }
-    p.a:active{
+    [tabindex="-1"]:active{
       color:green;
     }
 
