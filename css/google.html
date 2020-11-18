@@ -19,7 +19,7 @@
       /* 外边距上100像素  右自动 下0  左自动   */
       margin: 100px auto 0 auto; 
       /* 链接图片 */
-      background: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
+      background-image: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
       background-size: contain;
       /* 背景图片不重复 */
       background-repeat: no-repeat;
@@ -34,13 +34,15 @@
      }
      .search > .icon-search {
        position: absolute;
-       left: 16px;
        /* top: 12px; */
         /* 实现垂直居中效果更好 */
-        top: 50%;
-        transform: translaterY(-50%);
+       top: 50%;
+       transform: translate( 50%, -50%);
        color: #999;
        font-size: 16px;
+       
+       
+
      }
      
      .search > input {
@@ -54,10 +56,10 @@
      }
      .search > .icon-mic {
        position: absolute;
-       right: 16px;
-       top: 12px;
+       
        color: #5484ed;
        font-size: 18px;
+       
      }
      .search:hover {
        box-shadow: 0 0 4px 0px #ccc;
@@ -70,8 +72,6 @@
        background: #eee;
        font-size: 13px;
        color: #666;
-       padding: 6px 12px;
-       margin: 16px 4px;
        border-radius: 4px;
      }
   </style>

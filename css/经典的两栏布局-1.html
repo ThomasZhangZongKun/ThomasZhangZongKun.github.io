@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>经典的两栏布局</title>
+  <style>
+    body {
+      display: grid;
+      grid: auto auto auto / 1fr 800px 180px 1fr;
+    }
+    header {
+      grid-area: 1/2/2/4;
+      background: pink;
+    }
+    .subnav {
+      grid-area: 2/2/3/4;
+      background: yellow;
+    }
+    main {
+      grid-area: 3/2/4/3;
+      background: grey;
+    }
+  </style>
+</head>
+<body>
+  <header>header</header>
+  <div class="subnav">subnav</div>
+  <main>main</main>
+  <aside>aside</aside>
+</body>
+</html>
