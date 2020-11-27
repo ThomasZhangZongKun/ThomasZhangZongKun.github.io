@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2215468_l47u9vjtrv.css">
+  <title>我的在线简历</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    *, * ::before, *::after {
+      box-sizing: inherit;
+    }
+    body {
+      margin: 0%;
+      font: 14px/1.5 Arial;
+      color: #000;
+      display: grid;
+      grid: auto auto / 1fr 900px 1fr;
+    }
+    header {
+      grid-area: 1/2/2/4;
+      padding: 20px 0;
+      text-align: center;
+      background-color: #444;
+    }
+    main {
+      grid-area: 2/2/3/3;
+      display: grid;
+      grid: auto / 300px 600px;
+    }
+    .column-1 {
+      grid-area: 1/1/2/2;
+      
+    }
+    .column-2 {
+      grid-area: 1/2/2/3;
+      margin-left: 30px;
+    }
+  main section {
+    margin-top: 30px;
+    display: grid;
+    grid: auto auto / 50px auto;
+    align-items: center;
+
+  }
+  main section > span.iconfont {
+    grid-area: 1/1/2/2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #77a8a3;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  main section > h2 {
+    grid-area: 1/2/2/3;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  main section > h2::after {
+    content: '';
+    height: 2px;
+    margin-left: 20px;
+    flex: 1;
+    background: #77a8a3;
+  }
+  main section > .detail {
+    grid-area: 2/2/3/3;
+  }
+    header .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+    header > h1 {
+      margin: 10px;
+      font-size: 14px;
+      color: #aaa;
+    }
+    header > p {
+      margin: 0;
+    
+      color: #999 ;
+    }
+    .basic-info ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .basic-info .detail li {
+      display: flex;
+      align-items: center;
+    }
+
+    .basic-info .detail .iconfont {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    .skills .detail {
+      margin: 0;
+      padding: 0;
+    }
+    .skills .detail li {
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<bodya>
+  <header>
+    <img class="avatar" src="" alt="头像">
+    <h1>zzk</h1>
+    <p>应聘前端工程师</p>
+  </header>
+  <main>
+    <div class="column-1"></div>
+     <section class="basic-info">
+      <span class="iconfont icon-user"></span>
+      <h2>基本信息</h2>
+      <ul class="detail">
+        <li><span class="iconfont icon-phone"></span>15209841711</li>
+        <li><span class="iconfont icon-wechat"></span>xeidaima</li>
+        <li><span class="iconfont icon-email"></span>1634042449@qq.com</li>
+        <li><span class="iconfont icon-educatio"></span>专科</li>
+      </ul>
+     </section>
+     <section class="skills">
+      <span class="iconfont icon-skills"></span>
+      <h2>掌握技能</h2>
+      <ul class="detail">
+        <li>掌握HTML5/CSS3，熟悉传统布局、Flex布局、Grid布局、移动端适配等</li>
+        <li>熟悉Vue技术栈如Vue-Router、Vuex、Vue-CLI及相关流行库的使用，理解其重要概念1</li>
+        <li>熟悉React / Redux技术栈等使用，能够使用React进行基本开发</li>
+        <li>熟悉前后端交互技术JSONP、AJAX，了解fetch</li>
+        <li>熟悉Node.js开发，能搭建基础后台开发</li>
+      </ul>
+     </section>
+    <div class="column-2"></div>
+    <section class="education">
+      <span class="iconfont icon-educationr"></span>
+      <h2>教育经历</h2>
+      <ul class="detail">
+        <li><span class="timeline">09/2013~07/2017</span></li>
+        <h3>电子科技大学</h3>
+        <span class="profession">计算机专业</span>
+        <p>多次获得校一等奖学金,成绩排名专业前10%</p>
+      </ul>
+     </section>
+    <section></section>
+  </main>
+</body>
+</html>
