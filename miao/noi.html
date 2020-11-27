@@ -244,7 +244,7 @@
 
 <script id="ch0104/17" type="xxx">
   var a = Number(prompt("请输入一个数a"))
-   if ( a / 4 === 0 || a / 100 === 0) {
+   if ( a % 4 === 0 && a % 100 === 0 || a % 400 === 0) {
      console.log("Y")
    } else {
      console.log("N")
@@ -262,6 +262,20 @@
 </script>
 
 <script id="ch0104/19" type="xxx">
+  var x = Number(prompt("请输入x"))
+  var y = Number(prompt("请输入y"))
+  var answer = prompt("请输入操作符 + - * /")
+  if (answer=== "+") {
+    console.log(x+y)
+  } else if (answer=== "-") {
+    console.log(x-y)
+  } else if (answer=== "*") {
+    console.log(x*y)
+  } else if (answer=== "/") {
+    console.log(x/y)
+  } else {
+    console.log("Invalid operator")
+  } 
 </script>
 
 <script id="ch0104/19" type="xxx">
@@ -277,6 +291,10 @@
 </script>
 
 <script id="ch0104/21" type="xxx">
+  var n = Number(prompt("请输入一个数n"))
+  var x = Number(prompt("请输入一个数x"))
+  var y = Number(prompt("请输入一个数y"))
+  console.log( n - Math.ceil(y / x))
 </script>
 
 
